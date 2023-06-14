@@ -8,7 +8,6 @@ plugin.dependencies = {
 }
 
 local servers = {
-  "lua_ls",
   "cssls",
   "html",
   "tsserver",

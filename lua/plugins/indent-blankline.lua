@@ -1,5 +1,6 @@
 local plugin = { "lukas-reineke/indent-blankline.nvim" }
 
+plugin.version = nil
 plugin.name = "indent_blankline"
 
 plugin.opts = {
