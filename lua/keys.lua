@@ -84,6 +84,9 @@ keymap("x", "<leader>/", '<ESC><CMD>lua require("Comment.api").toggle.linewise(v
 keymap("n", "K", vim.lsp.buf.hover, opts)
 keymap("n", "gr", require("telescope.builtin").lsp_references, opts)
 
+-- git messenger
+keymap("n", "gb", "<cmd>GitMessenger<cr>", opts)
+
 -- ranger
 keymap("n", "<leader>r", ":RnvimrToggle<CR>", opts)
 keymap("t", "<leader>r", "<C-\\><C-n>:RnvimrToggle<CR>", opts)
