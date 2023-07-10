@@ -101,3 +101,5 @@ keymap("n", "<RightMouse>", "<LeftMouse><cmd>lua vim.lsp.buf.definition()<CR>", 
 
 keymap("n", "<C-ScrollWheelUp>", "<C-i>", { noremap = true, silent = true })
 keymap("n", "<C-ScrollWheelDown>", "<C-o>", { noremap = true, silent = true })
+
+keymap("n", "<F1>", "<cmd>TroubleToggle<cr>", { noremap = true, silent = true })
