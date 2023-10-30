@@ -48,17 +48,21 @@ opt.whichwrap:append("<>[]hl")
 
 -- disable some default providers
 for _, provider in ipairs({ "node", "perl", "python3", "ruby" }) do
-  vim.g["loaded_" .. provider .. "_provider"] = 0
+	vim.g["loaded_" .. provider .. "_provider"] = 0
 end
 
 -- treat words with `-` as single words
-vim.opt.iskeyword:append("-")
+opt.iskeyword:append("-")
 
 -- hide all the completion messages, e.g. "-- XXX completion (YYY)", "match 1 of 2", "The only match", "Pattern not found"
-vim.opt.shortmess:append("c")
+opt.shortmess:append("c")
 
 -- display lines as one long line
-vim.opt.wrap = false
+opt.wrap = false
 
 -- minimal number of screen lines to keep above and below the cursor
-vim.opt.scrolloff = 8
+opt.scrolloff = 8
+
+-- cursorline in line numbers area
+opt.cursorline = true
+opt.cursorlineopt = "number"
